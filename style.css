@@ -254,7 +254,6 @@ color: white;
           flex-direction: column;
           background-color: black;
           justify-content: space-evenly;
-          align-items: center;
           position: fixed;
           width: 100%;
           margin: 0;
@@ -262,16 +261,14 @@ color: white;
           top: 0px;
           left: 0px;
           font-size: 40px;
-          clip-path: circle(100px at 105% -9%);
-          -webkit-clip-path: circle(100px at  105% -9%);
+          clip-path: circle(100px at 105% -15%);
+          -webkit-clip-path: circle(100px at  105% -15%);
           transition: all 1s ease-out;
           pointer-events: none;
+          margin-left: -10%;
           
       }
-       nav li a{
-           padding: 0px;
-           margin: 0px;
-       }
+      
       .nav.open{
         clip-path: circle(1800px at  90% -15%);
         -webkit-clip-path: circle(1800px at  90% -15%);
@@ -294,12 +291,12 @@ color: white;
     }
   
     .landing{
-        width: 418px;
+        width: 407px;
     }
     
     .adarsh{
-        font-size: 34px;
-        margin-top: 23%;
+        font-size: 24px;
+        margin-top: 29%;
     }
 
     .aspirant{
@@ -314,7 +311,7 @@ color: white;
         margin: auto;
         margin-top: 17%;
         display: flex;
-        width: 370px;
+        width: 270px;
         font-size: 23px;
         display: flex;
         justify-content: space-around;

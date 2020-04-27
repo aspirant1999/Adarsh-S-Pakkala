@@ -23,8 +23,8 @@ sectionOneObserver.observe(sectionOne);
 
 
 const hamburger = document.querySelector(".hamburger");
-const navlinks = document.querySelector(".nav");
-const links = document.querySelectorAll(".nav li");
+const navlinks = document.querySelector(".nav-head");
+const links = document.querySelectorAll(".nav-head li");
 
 
 hamburger.addEventListener("click", () =>{

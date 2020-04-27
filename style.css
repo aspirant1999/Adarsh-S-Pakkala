@@ -43,10 +43,12 @@ header{
 }
 .nav-head li{
     opacity: 0;
+    margin-top: -25%;
 }
 
 .nav-head li a{
     font-size: 25px;
+    
 }
 
 .nav-head li:nth-child(1){

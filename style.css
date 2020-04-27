@@ -408,7 +408,7 @@ color: white;
     
     footer{
         position: absolute;
-        bottom: 0;
+        bottom: 0%;
         width: 100%;
         height: 10vh;
     }
@@ -440,11 +440,11 @@ color: white;
     }
     
     .fa {
-        padding: 20px;
+        padding: 10px;
         width: 50px;
         text-align: center;
         text-decoration: none;
-        margin: 5px 2px;
+        margin: 0px 2px;
         transition: color 0.3s;
       }
       

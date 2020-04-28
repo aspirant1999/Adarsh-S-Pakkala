@@ -1,0 +1,343 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+   background-color: black;
+}
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 7em;
+    transition: background 250ms ease-in;
+   
+}
+
+.nav-head{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    justify-content: flex-end;
+    
+}
+
+.nav-head li a{
+    
+    text-decoration: none;
+    list-style: none;
+    margin-left: 6em;
+    padding: 0  17px;
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+
+#active{
+    color: #76A35F;
+}
+
+.navlist:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 1em;
+    right: 1em;
+    height: 2px;
+    background: white;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    transition: -webkit-transform 150ms ease-in-out;
+    transition: transform 150ms ease-in-out;
+    transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+  }
+  
+  .navlist:hover::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+
+
+  main{
+    width: 80%;
+    margin: auto;
+    margin-top: 20%;
+    
+}
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+.heading h2{
+    grid-column: 1/6;
+    padding: 10px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 725px) {
+   
+    *{              
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background-color: black;
+        color: white;
+    }
+    
+    .landing{
+        display: none;
+    }
+    
+    header{
+        height: 10vh;
+        position: fixed;
+    }
+    #active{
+      color:  #76A35F;
+    }
+    .nav-head{
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 6;
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        list-style: none;
+        clip-path: circle(100px at  110% -15%);
+            -webkit-clip-path: circle(100px at  110% -15%);
+            transition: all 1s ease-out;
+            pointer-events: none;
+    }
+    .nav-head.open{
+        clip-path: circle(1000px at  90% -15%);
+        -webkit-clip-path: circle(1000px at  90% -15%);
+        pointer-events: all;
+    }
+    .nav-head li{
+        position: relative;
+      top: -20%;
+        opacity: 0;
+        margin: 17% 0%;
+    }
+    
+    .nav-head li a{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        margin: auto;
+        
+    }
+    .nav-scrolled {
+        background-color: rgb(17, 17, 17);
+        box-shadow: 0 3px 20px rgba(24, 23, 23, 0.2);
+      }
+    
+    .nav-head li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-head li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-head li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    
+    li.fade{
+        opacity: 1;
+    }
+    .navlist{
+        text-decoration: none;
+        font-family: sans-serif;
+        color: white;
+    }
+    .logo-container{
+        position: absolute;
+        left: 5%;
+    }
+    
+    .logo{
+        width: 60%;
+    }
+    
+    .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    
+    
+    .hamburger{
+    position: absolute;
+    top:25%;
+    right: 3%;
+    cursor: pointer;
+    z-index: 10;
+    }
+     
+    main{
+        width: 90%;
+        margin: auto;
+        margin-top: 25%;
+        
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+    }
+    .heading h2{
+        grid-column: 1/6;
+        padding: 10px 0px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        border-bottom: 1px solid white;
+        text-transform: uppercase;
+    }
+
+    .project1{
+        margin-top: 10%;
+        background-color: #232323;
+    }
+    .head1{
+        grid-column: 5/9;
+        display: flex;
+        font-family: 'Poppins', sans-serif;
+        justify-content: flex-end;
+        margin: 20px 25px;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 8px 0;
+        border-bottom: 1px solid white;
+    }
+    .para1{
+        grid-column: 1/9;
+        grid-row: 2;
+        display: flex;
+        margin: 10px;
+        padding: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .button1{
+        grid-column: 1/5;
+        grid-row: 3;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 10px 5px;
+        font-size: 12px;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        border: 1px solid white;
+        border-radius: 25px;
+    }
+
+    footer{
+        margin-top: 10%;
+        position: relative;
+        bottom: 0%;
+        width: 100%;
+        height: 10vh;
+    }
+    
+    
+    
+    #social{
+        margin: auto;
+        display: flex;
+        width: 300px;
+        font-size: 23px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .copy{
+        font-family: Poppins;
+        font-size: 8px;
+        font-weight: 200;
+        display: flex;
+        justify-content: center;
+        opacity: 80%;
+    }
+    
+    .copy a{
+        font-weight: 200;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .fa {
+        padding: 10px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 0px 2px;
+        transition: color 0.3s;
+      }
+      
+      .fa:hover {
+          opacity: 0.7;
+          color: darkturquoise;
+      }
+      
+      .fa-facebook {
+        
+        color: white;
+      }
+      
+      .fa-twitter {
+       
+        color: white;
+      }
+      
+      
+      .fa-linkedin {
+        
+        color: white;
+      }
+    
+      .fa-instagram {
+      
+        color: white;
+      }
+    
+      .fa-github {
+        
+        color: white;
+      }
+      .nav-scrolled {
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0 3px 20px rgba(24, 23, 23, 0.2);
+      }
+ 
+}

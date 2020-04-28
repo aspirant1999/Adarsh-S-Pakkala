@@ -227,7 +227,8 @@ color: white;
 
   @media screen and (max-width: 725px) {
       
-    *{
+    
+    *{              
         padding: 0px;
         margin: 0px;
         box-sizing: border-box;
@@ -286,6 +287,10 @@ color: white;
         margin: auto;
         
     }
+    .nav-scrolled {
+        background-color: rgb(17, 17, 17);
+        box-shadow: 0 3px 20px rgba(24, 23, 23, 0.2);
+      }
     
     .nav-head li:nth-child(1){
         transition: all 0.5s ease 0.2s;

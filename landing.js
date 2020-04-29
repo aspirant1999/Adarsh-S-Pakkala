@@ -2,7 +2,7 @@ const header = document.querySelector("header");
 const sectionOne = document.querySelector(".adarsh");
 
 const sectionOneOptions = {
-  rootMargin: "-200px 0px 0px 0px"
+  rootMargin: "-100px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function(

@@ -353,17 +353,16 @@ color: white;
         position: relative;
         z-index: 1;
     }
-    .academics::before{
+
+    .academics img{
         position: absolute;
-        content: '';
-        background: url(https://imgur.com/FfkY72B) center no-repeat;
-        background-size: cover;
         width: 100%;
         height: 100%;
         z-index: -1;
         opacity: 5%;
-
+        
     }
+   
     .aca{
         grid-column: 4/9;
     display: flex;

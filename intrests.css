@@ -398,7 +398,7 @@ footer{
     }
 
     /*footer*/
-    
+   
     footer{
         margin-top: 10%;
         position: relative;
@@ -476,8 +476,5 @@ footer{
         background-color: rgb(0, 0, 0);
         box-shadow: 0 3px 20px rgba(24, 23, 23, 0.2);
       }
- 
-
-
 
 }
